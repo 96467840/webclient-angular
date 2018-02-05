@@ -1,24 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from '../pages/home.component';
-import { NotFoundComponent } from '../pages/not-found.component';
-
-// определение маршрутов
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  //{ path: 'about', component: AboutComponent },
-  { path: '**', component: NotFoundComponent }
-];
+import * as Pages from '../pages';
 
 @NgModule({
   declarations: [
-    AppComponent, HomeComponent/*, AboutComponent*/, NotFoundComponent
+    AppComponent, ...Pages.Components //Pages.HomeComponent, Pages.AboutComponent, Pages.NotFoundComponent, Pages.ItemComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(appRoutes)
+    BrowserModule, RouterModule.forRoot(Pages.appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

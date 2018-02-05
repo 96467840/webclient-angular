@@ -46,3 +46,4 @@ Thumbs.db
 .vs/
 /wwwroot/dist/
 /ClientApp/dist/
+obj/

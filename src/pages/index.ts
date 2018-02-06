@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ItemComponent } from './item/item.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+//import { TestServiceWithSingleCreate } from '../libs/base-page';
 
 // определение маршрутов
 export const appRoutes: Routes = [
@@ -16,3 +17,6 @@ export const appRoutes: Routes = [
 ];
 
 export const Components = [HomeComponent, AboutComponent, ItemComponent, NotFoundComponent];
+
+// глобальные сервисы для всех страниц, которые нужно создать только 1 раз (сессия, работа с формами и тд)
+export const Providers = [];

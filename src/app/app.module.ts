@@ -4,15 +4,18 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import * as Pages from '../pages';
+//import { PageConstructorParams } from '../libs/base-page';
 
 @NgModule({
   declarations: [
-    AppComponent, ...Pages.Components //Pages.HomeComponent, Pages.AboutComponent, Pages.NotFoundComponent, Pages.ItemComponent
+    AppComponent, ...Pages.Components
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(Pages.appRoutes)
   ],
-  providers: [],
+  // нельзя глобально создавать! у нас там route: ActivatedRoute и оно должно создаваться (в теории) для каждой страницы свое
+  //providers: [PageConstructorParams],
+  providers: [...Pages.Providers],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -19,11 +19,11 @@ function decor(): (target: any, propertyKey: string, descriptor: PropertyDescrip
 }
 
 @Component({
-  selector: 'base-page',
+  selector: 'app-page-base',
   template: '',
   providers: [PageConstructorParams],
 })
-export class BasePage {
+export abstract class BasePage {
   @decor()
   method() { }
 

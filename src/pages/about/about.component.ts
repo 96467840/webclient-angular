@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { BasePage, PageConstructorParams } from '../../libs/base-page';
 
 @Component({
-  selector: 'about-page',
+  selector: 'app-page-about',
   template: `<h3>О компании</h3>`,
   providers: [PageConstructorParams],
 })

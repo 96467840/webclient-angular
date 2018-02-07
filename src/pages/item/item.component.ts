@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs/Subscription';
 import { BasePage, PageConstructorParams } from '../../libs/base-page';
 
 @Component({
-  selector: 'item-page',
+  selector: 'app-page-item',
   template: `<h3>Модель {{id}}</h3>
                 <div>Товар: {{product}}</div>
                 <div>Цена: {{price}}</div>`,

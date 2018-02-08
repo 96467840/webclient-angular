@@ -10,10 +10,10 @@
       <a routerLink="/contact">Контакты</a>
     </li>
     <li routerLinkActive="active">
-      <a [routerLink]="['item', '5']" [queryParams]="{'product':'phone', 'price': 200}">item 5</a>
+      <a [routerLink]="['/item/5']" [queryParams]="{'product':'phone', 'price': 200}">item 5</a>
     </li>
     <li routerLinkActive="active">
-      <a [routerLink]="['item', '213']" [queryParams]="{'product':'tablet'}">item 213</a>
+      <a [routerLink]="['/','item', '213']" [queryParams]="{'product':'tablet'}">item 213</a>
     </li>
 
     <li routerLinkActive="active">

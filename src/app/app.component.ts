@@ -8,5 +8,5 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'Webclient angular';
-  constructor(private router: Router) { }
+  //constructor(private router: Router) { }
 }

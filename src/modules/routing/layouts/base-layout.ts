@@ -5,7 +5,6 @@ import { Subscription } from 'rxjs/Subscription';
 @Injectable()
 export class LayoutConstructorParams {
   constructor(public router: Router, public route: ActivatedRoute) {
-    //console.log('PageConstructorParams::constructor.', route.component);
   }
 }
 

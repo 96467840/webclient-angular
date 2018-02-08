@@ -13,11 +13,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 // определение маршрутов
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent, pathMatch: 'full' },
-  { path: 'contact', redirectTo: '/about', pathMatch: 'full' },
-  { path: 'item/:id', component: ItemComponent, pathMatch: 'full' },
-  { path: '**', component: NotFoundComponent }
+  { path: '',           data: { name: 'home' }, component: HomeComponent },
+  { path: 'about',      data: { name: 'about' }, component: AboutComponent },
+  { path: 'contact',    data: { name: 'contact' }, redirectTo: '/about', pathMatch: 'full' },
+  { path: 'item/:id',   data: { name: 'item' }, component: ItemComponent },
+  { path: '**',         data: { name: '404' }, component: NotFoundComponent }
 ];
 
 const Components = [HomeComponent, AboutComponent, ItemComponent, NotFoundComponent];

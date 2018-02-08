@@ -1,5 +1,6 @@
 import { LayoutComponent } from './layout/layout.component';
+import { BaseLayout } from './base-layout';
 
-export { LayoutComponent };
+export { LayoutComponent, BaseLayout };
 
-export const Components = [LayoutComponent];
+export const Components = [BaseLayout, LayoutComponent];

@@ -13,7 +13,7 @@ export class LayoutConstructorParams {
   template: '',
   providers: [LayoutConstructorParams],
 })
-export abstract class BaseLayout {
+export class BaseLayout {
   routeName: string;
   private routeSubscription: Subscription;
 

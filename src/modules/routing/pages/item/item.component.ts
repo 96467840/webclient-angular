@@ -17,9 +17,9 @@ import { LayoutComponent } from '../../layouts';
 })
 export class ItemComponent extends BasePage {
 
-  private id: number;
-  private product: string;
-  private price: string;
+  public id: number;
+  public product: string;
+  public price: string;
 
   private routeSubscription : Subscription;
   private querySubscription: Subscription;

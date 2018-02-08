@@ -11,22 +11,13 @@ export class PageConstructorParams {
   }
 }
 
-function decor(): (target: any, propertyKey: string, descriptor: PropertyDescriptor) => void {
-  console.log("f(): evaluated");
-  return (target: any, propertyKey: string, descriptor: PropertyDescriptor): void => {
-    console.log("f(): called");
-  }
-}
-
 @Component({
   selector: 'app-page-base',
   template: '',
   providers: [PageConstructorParams],
 })
-export abstract class BasePage {
-  @decor()
-  method() { }
-
+export class BasePage {
+ 
   // так как нам по любому надо прописывать дефолтный конструктор в каждом классе то нет смысла для всех страниц определять protected props
   //constructor(protected props: PageConstructorParams) { }
 }

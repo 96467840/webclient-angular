@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ItemComponent } from './item/item.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BasePage } from './base-page';
 
 //import { TestServiceWithSingleCreate } from '../libs/base-page';
 
@@ -20,7 +21,7 @@ const appRoutes: Routes = [
   { path: '**',         data: { name: '404' }, component: NotFoundComponent }
 ];
 
-const Components = [HomeComponent, AboutComponent, ItemComponent, NotFoundComponent];
+const Components = [BasePage, HomeComponent, AboutComponent, ItemComponent, NotFoundComponent];
 
 // глобальные сервисы для всех страниц, которые нужно создать только 1 раз (сессия, работа с формами и тд)
 const Providers = [];

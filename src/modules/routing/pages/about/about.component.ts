@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BasePage, PageConstructorParams } from '../../libs/base-page';
+import { BasePage, PageConstructorParams } from '../base-page';
 
 @Component({
   selector: 'app-page-about',

@@ -1,0 +1,28 @@
+<div class="app-layout">
+  <ul class="nav">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <a routerLink="">Главная</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/about">О сайте</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/contact">Контакты</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['item', '5']" [queryParams]="{'product':'phone', 'price': 200}">item 5</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['item', '213']" [queryParams]="{'product':'tablet'}">item 213</a>
+    </li>
+
+    <li routerLinkActive="active">
+      <a routerLink="/404">404</a>
+    </li>
+  </ul>
+
+  <ng-content></ng-content>
+
+  <button (click)="goHome()">На главную</button>
+
+</div>

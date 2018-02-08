@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-page-home',
-  template: `<h3>Главная</h3>`
+  template: `<app-layout><h3>Главная</h3></app-layout>`
 })
 export class HomeComponent { }

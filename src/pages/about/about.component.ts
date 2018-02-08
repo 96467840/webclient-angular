@@ -3,7 +3,7 @@ import { BasePage, PageConstructorParams } from '../../libs/base-page';
 
 @Component({
   selector: 'app-page-about',
-  template: `<h3>О компании</h3>`,
+  template: `<app-layout><h3>О компании</h3></app-layout>`,
   providers: [PageConstructorParams],
 })
 export class AboutComponent extends BasePage {

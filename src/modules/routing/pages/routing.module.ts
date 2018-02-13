@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 //import * as Pages from './';
 import * as Layouts from '../layouts';
@@ -29,6 +30,7 @@ const Providers = [];
 @NgModule({
   declarations: [...Components, ...Layouts.Components],
   imports: [
+    NgbModule,
     RouterModule.forRoot(
       appRoutes,
       //{ enableTracing: true } // <-- debugging purposes only
